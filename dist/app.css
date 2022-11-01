@@ -1,0 +1,16 @@
+.color-palette {
+
+}
+.color-palette a{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border: 2px solid rgb(255 255 255 / 60%);
+    padding: 0px;
+    height: 29px;
+    display: inline-block;
+}
+.color-palette a span{
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+}
