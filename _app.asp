@@ -57,7 +57,7 @@ Class Page_Loading_Effect_Plugin
 		'*/
 		a=GetSettings("PLUGIN:"& PLUGIN_CODE &"", PLUGIN_CODE&"_")
 		a=GetSettings(""&PLUGIN_CODE&"_PLUGIN_NAME", PLUGIN_NAME)
-		a=GetSettings(""&PLUGIN_CODE&"_CLASS", "ClassName")
+		a=GetSettings(""&PLUGIN_CODE&"_CLASS", "Page_Loading_Effect_Plugin")
 		a=GetSettings(""&PLUGIN_CODE&"_REGISTERED", ""& Now() &"")
 		a=GetSettings(""&PLUGIN_CODE&"_CODENO", "0")
 		a=GetSettings(""&PLUGIN_CODE&"_FOLDER", PLUGIN_FOLDER_NAME)
@@ -181,7 +181,7 @@ Class Page_Loading_Effect_Plugin
 		'-----------------------------------------------------------------------------------
 		'*/
 		If ACTIVE = 1 AND PLUGIN_AUTOLOAD_AT("WEB") = True Then 
-			Init()
+			Cms.BodyData = Init()
 			' Cms.FooterData = "<add-footer-html>Hello World!</add-footer-html>"
 		End If
 	End Sub
